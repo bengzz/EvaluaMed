@@ -10,7 +10,7 @@
 
 @implementation Networking
 
-//- (void)authenticateWithUserEmail:(NSString *)pUserEmail withUserPassword:(NSString *)pUserPassword completion:(void (^)(BOOL success))completionBlock{
+- (void)authenticateWithUserEmail:(NSString *)pUserEmail withUserPassword:(NSString *)pUserPassword completion:(void (^)(BOOL success))completionBlock{
 //    NSString *loginURL = @"https://mydomain/login";
 //    NSDictionary *parameters = @{@"format": @"json"};
 //    
@@ -31,6 +31,6 @@
 //        NSLog(@"Failure");
 //        }];
 //    [operation start];
-//}
+}
 
 @end

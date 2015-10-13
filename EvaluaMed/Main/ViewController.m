@@ -11,6 +11,7 @@
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *imageIntro;
 @property (strong, nonatomic) IBOutlet UIButton *buttonLogin;
+@property (strong, nonatomic) IBOutlet UIButton *buttonFPassword;
 @property (strong, nonatomic) IBOutlet UITextField *labelUser;
 @property (strong, nonatomic) IBOutlet UITextField *labelPassword;
 
