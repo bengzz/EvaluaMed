@@ -14,6 +14,18 @@
 		15C999B21BCCB607006B35B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C999B11BCCB607006B35B6 /* Images.xcassets */; };
 		15C999B51BCCB607006B35B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15C999B31BCCB607006B35B6 /* LaunchScreen.xib */; };
 		15C999C11BCCB607006B35B6 /* EvaluaMedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999C01BCCB607006B35B6 /* EvaluaMedTests.m */; };
+		15C999DE1BCCB683006B35B6 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999CB1BCCB683006B35B6 /* AccountViewController.m */; };
+		15C999DF1BCCB683006B35B6 /* AddStudentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999CD1BCCB683006B35B6 /* AddStudentsViewController.m */; };
+		15C999E01BCCB683006B35B6 /* ECell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999D01BCCB683006B35B6 /* ECell.m */; };
+		15C999E11BCCB683006B35B6 /* EvaluateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999D21BCCB683006B35B6 /* EvaluateListViewController.m */; };
+		15C999E21BCCB683006B35B6 /* pAccount.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D41BCCB683006B35B6 /* pAccount.png */; };
+		15C999E31BCCB683006B35B6 /* pEvaluate.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D51BCCB683006B35B6 /* pEvaluate.png */; };
+		15C999E41BCCB683006B35B6 /* pLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D61BCCB683006B35B6 /* pLogin.png */; };
+		15C999E51BCCB683006B35B6 /* pLogout.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D71BCCB683006B35B6 /* pLogout.png */; };
+		15C999E61BCCB683006B35B6 /* pStudents.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D81BCCB683006B35B6 /* pStudents.png */; };
+		15C999E71BCCB683006B35B6 /* pTec.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D91BCCB683006B35B6 /* pTec.png */; };
+		15C999E81BCCB683006B35B6 /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999DB1BCCB683006B35B6 /* Networking.m */; };
+		15C999E91BCCB683006B35B6 /* StudentsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999DD1BCCB683006B35B6 /* StudentsListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,24 @@
 		15C999BA1BCCB607006B35B6 /* EvaluaMedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvaluaMedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C999BF1BCCB607006B35B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C999C01BCCB607006B35B6 /* EvaluaMedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvaluaMedTests.m; sourceTree = "<group>"; };
+		15C999CA1BCCB683006B35B6 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		15C999CB1BCCB683006B35B6 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		15C999CC1BCCB683006B35B6 /* AddStudentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStudentsViewController.h; sourceTree = "<group>"; };
+		15C999CD1BCCB683006B35B6 /* AddStudentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudentsViewController.m; sourceTree = "<group>"; };
+		15C999CF1BCCB683006B35B6 /* ECell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECell.h; sourceTree = "<group>"; };
+		15C999D01BCCB683006B35B6 /* ECell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECell.m; sourceTree = "<group>"; };
+		15C999D11BCCB683006B35B6 /* EvaluateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluateListViewController.h; sourceTree = "<group>"; };
+		15C999D21BCCB683006B35B6 /* EvaluateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateListViewController.m; sourceTree = "<group>"; };
+		15C999D41BCCB683006B35B6 /* pAccount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pAccount.png; sourceTree = "<group>"; };
+		15C999D51BCCB683006B35B6 /* pEvaluate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pEvaluate.png; sourceTree = "<group>"; };
+		15C999D61BCCB683006B35B6 /* pLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pLogin.png; sourceTree = "<group>"; };
+		15C999D71BCCB683006B35B6 /* pLogout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pLogout.png; sourceTree = "<group>"; };
+		15C999D81BCCB683006B35B6 /* pStudents.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pStudents.png; sourceTree = "<group>"; };
+		15C999D91BCCB683006B35B6 /* pTec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pTec.png; sourceTree = "<group>"; };
+		15C999DA1BCCB683006B35B6 /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Networking.h; sourceTree = "<group>"; };
+		15C999DB1BCCB683006B35B6 /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Networking.m; sourceTree = "<group>"; };
+		15C999DC1BCCB683006B35B6 /* StudentsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListViewController.h; sourceTree = "<group>"; };
+		15C999DD1BCCB683006B35B6 /* StudentsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +113,13 @@
 			children = (
 				15C999A81BCCB607006B35B6 /* AppDelegate.h */,
 				15C999A91BCCB607006B35B6 /* AppDelegate.m */,
-				15C999AB1BCCB607006B35B6 /* ViewController.h */,
-				15C999AC1BCCB607006B35B6 /* ViewController.m */,
+				15C999ED1BCCB6C1006B35B6 /* Networking */,
+				15C999EA1BCCB699006B35B6 /* Account */,
+				15C999EB1BCCB6A1006B35B6 /* Add Students */,
+				15C999EC1BCCB6AE006B35B6 /* Evaluate List */,
+				15C999EF1BCCB6E0006B35B6 /* Students List */,
+				15C999EE1BCCB6D9006B35B6 /* Main */,
+				15C999D31BCCB683006B35B6 /* Images */,
 				15C999AE1BCCB607006B35B6 /* Main.storyboard */,
 				15C999B11BCCB607006B35B6 /* Images.xcassets */,
 				15C999B31BCCB607006B35B6 /* LaunchScreen.xib */,
@@ -117,6 +152,83 @@
 				15C999BF1BCCB607006B35B6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15C999CE1BCCB683006B35B6 /* ECell */ = {
+			isa = PBXGroup;
+			children = (
+				15C999CF1BCCB683006B35B6 /* ECell.h */,
+				15C999D01BCCB683006B35B6 /* ECell.m */,
+			);
+			path = ECell;
+			sourceTree = "<group>";
+		};
+		15C999D31BCCB683006B35B6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				15C999D41BCCB683006B35B6 /* pAccount.png */,
+				15C999D51BCCB683006B35B6 /* pEvaluate.png */,
+				15C999D61BCCB683006B35B6 /* pLogin.png */,
+				15C999D71BCCB683006B35B6 /* pLogout.png */,
+				15C999D81BCCB683006B35B6 /* pStudents.png */,
+				15C999D91BCCB683006B35B6 /* pTec.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		15C999EA1BCCB699006B35B6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				15C999CA1BCCB683006B35B6 /* AccountViewController.h */,
+				15C999CB1BCCB683006B35B6 /* AccountViewController.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		15C999EB1BCCB6A1006B35B6 /* Add Students */ = {
+			isa = PBXGroup;
+			children = (
+				15C999CC1BCCB683006B35B6 /* AddStudentsViewController.h */,
+				15C999CD1BCCB683006B35B6 /* AddStudentsViewController.m */,
+			);
+			name = "Add Students";
+			sourceTree = "<group>";
+		};
+		15C999EC1BCCB6AE006B35B6 /* Evaluate List */ = {
+			isa = PBXGroup;
+			children = (
+				15C999CE1BCCB683006B35B6 /* ECell */,
+				15C999D11BCCB683006B35B6 /* EvaluateListViewController.h */,
+				15C999D21BCCB683006B35B6 /* EvaluateListViewController.m */,
+			);
+			name = "Evaluate List";
+			sourceTree = "<group>";
+		};
+		15C999ED1BCCB6C1006B35B6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				15C999DA1BCCB683006B35B6 /* Networking.h */,
+				15C999DB1BCCB683006B35B6 /* Networking.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		15C999EE1BCCB6D9006B35B6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				15C999AB1BCCB607006B35B6 /* ViewController.h */,
+				15C999AC1BCCB607006B35B6 /* ViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		15C999EF1BCCB6E0006B35B6 /* Students List */ = {
+			isa = PBXGroup;
+			children = (
+				15C999DC1BCCB683006B35B6 /* StudentsListViewController.h */,
+				15C999DD1BCCB683006B35B6 /* StudentsListViewController.m */,
+			);
+			name = "Students List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +311,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C999E21BCCB683006B35B6 /* pAccount.png in Resources */,
 				15C999B01BCCB607006B35B6 /* Main.storyboard in Resources */,
+				15C999E71BCCB683006B35B6 /* pTec.png in Resources */,
+				15C999E61BCCB683006B35B6 /* pStudents.png in Resources */,
+				15C999E41BCCB683006B35B6 /* pLogin.png in Resources */,
+				15C999E31BCCB683006B35B6 /* pEvaluate.png in Resources */,
 				15C999B51BCCB607006B35B6 /* LaunchScreen.xib in Resources */,
 				15C999B21BCCB607006B35B6 /* Images.xcassets in Resources */,
+				15C999E51BCCB683006B35B6 /* pLogout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +338,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C999AD1BCCB607006B35B6 /* ViewController.m in Sources */,
+				15C999DF1BCCB683006B35B6 /* AddStudentsViewController.m in Sources */,
+				15C999E11BCCB683006B35B6 /* EvaluateListViewController.m in Sources */,
 				15C999AA1BCCB607006B35B6 /* AppDelegate.m in Sources */,
+				15C999E01BCCB683006B35B6 /* ECell.m in Sources */,
+				15C999DE1BCCB683006B35B6 /* AccountViewController.m in Sources */,
 				15C999A71BCCB607006B35B6 /* main.m in Sources */,
+				15C999E91BCCB683006B35B6 /* StudentsListViewController.m in Sources */,
+				15C999E81BCCB683006B35B6 /* Networking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

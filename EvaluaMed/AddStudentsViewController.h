@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddStudentsViewController.h
 //  EvaluaMed
 //
 //  Created by Benjamin Gonzalez on 10/6/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AddStudentsViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *buttonAdd;
 
 @end
-

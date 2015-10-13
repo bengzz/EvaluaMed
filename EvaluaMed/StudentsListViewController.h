@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StudentsListViewController.h
 //  EvaluaMed
 //
 //  Created by Benjamin Gonzalez on 10/6/15.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface StudentsListViewController : UIViewController
 
 @end
-
