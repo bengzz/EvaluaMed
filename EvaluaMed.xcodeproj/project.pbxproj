@@ -21,6 +21,7 @@
 		15FB03241BCD96AE00A892E9 /* EvaluateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB031F1BCD96AE00A892E9 /* EvaluateListViewController.m */; };
 		15FB03251BCD96AE00A892E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB03221BCD96AE00A892E9 /* ViewController.m */; };
 		15FB032C1BCD9C5200A892E9 /* EvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB032B1BCD9C5200A892E9 /* EvaluateViewController.m */; };
+		15FB032E1BCDA5BB00A892E9 /* pEvaluate.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		15FB03221BCD96AE00A892E9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		15FB032A1BCD9C5200A892E9 /* EvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvaluateViewController.h; path = Evaluate/EvaluateViewController.h; sourceTree = "<group>"; };
 		15FB032B1BCD9C5200A892E9 /* EvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvaluateViewController.m; path = Evaluate/EvaluateViewController.m; sourceTree = "<group>"; };
+		15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pEvaluate.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		15C999D31BCCB683006B35B6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */,
 				15C999D61BCCB683006B35B6 /* pLogin.png */,
 				15C999D71BCCB683006B35B6 /* pLogout.png */,
 				15C999D91BCCB683006B35B6 /* pTec.png */,
@@ -279,6 +282,7 @@
 				15C999B01BCCB607006B35B6 /* Main.storyboard in Resources */,
 				15C999E71BCCB683006B35B6 /* pTec.png in Resources */,
 				15C999E41BCCB683006B35B6 /* pLogin.png in Resources */,
+				15FB032E1BCDA5BB00A892E9 /* pEvaluate.png in Resources */,
 				15C999B51BCCB607006B35B6 /* LaunchScreen.xib in Resources */,
 				15C999B21BCCB607006B35B6 /* Images.xcassets in Resources */,
 				15C999E51BCCB683006B35B6 /* pLogout.png in Resources */,

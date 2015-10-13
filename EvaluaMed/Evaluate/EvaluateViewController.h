@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
-@interface EvaluateViewController : ViewController
+@interface EvaluateViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+    IBOutlet UITableView *tableView;
+}
 
 @end
