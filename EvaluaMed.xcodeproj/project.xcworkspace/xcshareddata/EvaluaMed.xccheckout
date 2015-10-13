@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>553C4A46-BBA2-431E-9628-5986D4E554F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EvaluaMed</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>29C8C8A70DAC1A30B305993E51D76B716CBD132D</key>
+		<string>https://github.com/bengzz/EvaluaMed.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EvaluaMed.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>29C8C8A70DAC1A30B305993E51D76B716CBD132D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bengzz/EvaluaMed.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>29C8C8A70DAC1A30B305993E51D76B716CBD132D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>29C8C8A70DAC1A30B305993E51D76B716CBD132D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EvaluaMed</string>
+		</dict>
+	</array>
+</dict>
+</plist>
