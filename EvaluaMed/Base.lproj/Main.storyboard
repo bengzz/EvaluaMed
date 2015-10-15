@@ -52,7 +52,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3x-df-bLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1210.5" y="-557.5"/>
+            <point key="canvasLocation" x="1211.5" y="-524.5"/>
         </scene>
         <!--Evaluate View Controller-->
         <scene sceneID="vVJ-eL-O7B">
@@ -122,7 +122,6 @@
                                 <state key="normal" image="pLogin.png"/>
                                 <connections>
                                     <action selector="buttonLogin:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lbe-fJ-g06"/>
-                                    <segue destination="mh3-xy-VJf" kind="push" id="gmu-gW-hme"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAe-JF-R6H">
@@ -151,11 +150,12 @@
                         <outlet property="imageIntro" destination="ONh-RN-olb" id="BmW-As-Q9F"/>
                         <outlet property="labelPassword" destination="yof-Cx-Igk" id="Fzx-yn-CLL"/>
                         <outlet property="labelUser" destination="PAe-JF-R6H" id="rjm-k9-Qjk"/>
+                        <segue destination="mh3-xy-VJf" kind="push" identifier="showList" id="g4d-Tc-xMl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="625.5" y="-557.5"/>
+            <point key="canvasLocation" x="637.5" y="-524.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gam-Dy-cwm">
