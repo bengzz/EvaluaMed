@@ -50,10 +50,10 @@
         if([self.labelUser.text isEqualToString:@""] || [self.labelPassword.text isEqualToString:@""] ) {
             [self alertStatus:@"Please enter both Username and Password" :@"Login Failed!"];
         } else {
-            NSString *post =[[NSString alloc] initWithFormat:@"username=%@&password=%@",self.labelUser.text,self.labelPassword.text];
+            NSString *post =[[NSString alloc] initWithFormat:@"usuario=%@&password=%@",self.labelUser.text,self.labelPassword.text];
             NSLog(@"PostData: %@",post);
             
-            NSURL *url=[NSURL URLWithString:@"https://evaluamed.com/jsonlogin.php"];
+            NSURL *url=[NSURL URLWithString:@"http://evaluacionqx.com/acces.php"];
             
             NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
             
@@ -82,7 +82,7 @@
                 SBJsonParser *jsonParser = [SBJsonParser new];
                 NSDictionary *jsonData = (NSDictionary *) [jsonParser objectWithString:responseData error:nil];
                 NSLog(@"%@",jsonData);
-                NSInteger success = [(NSNumber *) [jsonData objectForKey:@"success"] integerValue];
+                NSInteger success = [[[jsonData valueForKey:@"logstatus"] objectAtIndex:0] integerValue];
                 NSLog(@"%ld",(long)success);
                 if(success == 1)
                 {
