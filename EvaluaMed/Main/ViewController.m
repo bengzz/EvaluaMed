@@ -53,7 +53,7 @@
             NSString *post =[[NSString alloc] initWithFormat:@"usuario=%@&password=%@",self.labelUser.text,self.labelPassword.text];
             NSLog(@"PostData: %@",post);
             
-            NSURL *url=[NSURL URLWithString:@"http://evaluacionqx.com/acces.php"];
+            NSURL *url=[NSURL URLWithString:@"http://evaluacionqx.com/android/acces.php"];
             
             NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
             
