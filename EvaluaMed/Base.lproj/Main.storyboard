@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1211.5" y="-524.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Get Back View Controller-->
         <scene sceneID="t7g-wI-M9f">
             <objects>
-                <viewController id="z64-cb-IOj" sceneMemberID="viewController">
+                <viewController id="z64-cb-IOj" customClass="GetBackViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g7o-c2-Y79"/>
                         <viewControllerLayoutGuide type="bottom" id="4ni-k3-tlK"/>
@@ -77,16 +77,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPb-ot-9NY">
-                                <rect key="frame" x="166" y="217" width="43" height="30"/>
-                                <state key="normal" title="Enviar">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPb-ot-9NY">
+                                <rect key="frame" x="136" y="217" width="102" height="40"/>
+                                <state key="normal" image="pSend.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonSend:" destination="z64-cb-IOj" eventType="touchUpInside" id="2o1-jM-puH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="4TL-2s-Dsx"/>
+                    <connections>
+                        <outlet property="buttonSend" destination="aPb-ot-9NY" id="Bi9-wd-SCP"/>
+                        <outlet property="labelUser" destination="PbL-XG-awH" id="Eet-vX-aqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwR-Q8-Did" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,6 +304,7 @@
     <resources>
         <image name="pEvaluate.png" width="114" height="40"/>
         <image name="pLogin.png" width="150" height="50"/>
+        <image name="pSend.png" width="102" height="40"/>
         <image name="pTec.png" width="1642" height="900"/>
     </resources>
 </document>

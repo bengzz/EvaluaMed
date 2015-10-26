@@ -16,6 +16,8 @@
 		15C999E41BCCB683006B35B6 /* pLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D61BCCB683006B35B6 /* pLogin.png */; };
 		15C999E51BCCB683006B35B6 /* pLogout.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D71BCCB683006B35B6 /* pLogout.png */; };
 		15C999E71BCCB683006B35B6 /* pTec.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C999D91BCCB683006B35B6 /* pTec.png */; };
+		15D3A5831BD94F9B00B56E65 /* GetBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D3A5821BD94F9B00B56E65 /* GetBackViewController.m */; };
+		15D3A5861BD9523400B56E65 /* pSend.png in Resources */ = {isa = PBXBuildFile; fileRef = 15D3A5851BD9523400B56E65 /* pSend.png */; };
 		15FB03191BCD968E00A892E9 /* Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB03181BCD968E00A892E9 /* Networking.m */; };
 		15FB03231BCD96AE00A892E9 /* ECell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB031D1BCD96AE00A892E9 /* ECell.m */; };
 		15FB03241BCD96AE00A892E9 /* EvaluateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB031F1BCD96AE00A892E9 /* EvaluateListViewController.m */; };
@@ -61,6 +63,9 @@
 		15C999D61BCCB683006B35B6 /* pLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pLogin.png; sourceTree = "<group>"; };
 		15C999D71BCCB683006B35B6 /* pLogout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pLogout.png; sourceTree = "<group>"; };
 		15C999D91BCCB683006B35B6 /* pTec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pTec.png; sourceTree = "<group>"; };
+		15D3A5811BD94F9B00B56E65 /* GetBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetBackViewController.h; path = GetBack/GetBackViewController.h; sourceTree = "<group>"; };
+		15D3A5821BD94F9B00B56E65 /* GetBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GetBackViewController.m; path = GetBack/GetBackViewController.m; sourceTree = "<group>"; };
+		15D3A5851BD9523400B56E65 /* pSend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pSend.png; sourceTree = "<group>"; };
 		15FB03171BCD968E00A892E9 /* Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Networking.h; path = Networking/Networking.h; sourceTree = "<group>"; };
 		15FB03181BCD968E00A892E9 /* Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Networking.m; path = Networking/Networking.m; sourceTree = "<group>"; };
 		15FB031C1BCD96AE00A892E9 /* ECell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECell.h; sourceTree = "<group>"; };
@@ -143,6 +148,7 @@
 				15FB032F1BCDACEF00A892E9 /* Jason Classes */,
 				15FB031A1BCD96AE00A892E9 /* Evaluate List */,
 				15FB03291BCD99AE00A892E9 /* Evaluate */,
+				15D3A5841BD94FA000B56E65 /* Get Back password */,
 				15FB03201BCD96AE00A892E9 /* Main */,
 				15C999ED1BCCB6C1006B35B6 /* Networking */,
 				15C999D31BCCB683006B35B6 /* Images */,
@@ -183,6 +189,7 @@
 		15C999D31BCCB683006B35B6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				15D3A5851BD9523400B56E65 /* pSend.png */,
 				15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */,
 				15C999D61BCCB683006B35B6 /* pLogin.png */,
 				15C999D71BCCB683006B35B6 /* pLogout.png */,
@@ -198,6 +205,15 @@
 				15FB03181BCD968E00A892E9 /* Networking.m */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		15D3A5841BD94FA000B56E65 /* Get Back password */ = {
+			isa = PBXGroup;
+			children = (
+				15D3A5811BD94F9B00B56E65 /* GetBackViewController.h */,
+				15D3A5821BD94F9B00B56E65 /* GetBackViewController.m */,
+			);
+			name = "Get Back password";
 			sourceTree = "<group>";
 		};
 		15FB031A1BCD96AE00A892E9 /* Evaluate List */ = {
@@ -355,6 +371,7 @@
 				15FB032E1BCDA5BB00A892E9 /* pEvaluate.png in Resources */,
 				15C999B51BCCB607006B35B6 /* LaunchScreen.xib in Resources */,
 				15C999B21BCCB607006B35B6 /* Images.xcassets in Resources */,
+				15D3A5861BD9523400B56E65 /* pSend.png in Resources */,
 				15C999E51BCCB683006B35B6 /* pLogout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,6 +396,7 @@
 				15FB034E1BCDACEF00A892E9 /* SBJsonStreamParserState.m in Sources */,
 				15FB03241BCD96AE00A892E9 /* EvaluateListViewController.m in Sources */,
 				15FB032C1BCD9C5200A892E9 /* EvaluateViewController.m in Sources */,
+				15D3A5831BD94F9B00B56E65 /* GetBackViewController.m in Sources */,
 				15FB03191BCD968E00A892E9 /* Networking.m in Sources */,
 				15FB03541BCDACEF00A892E9 /* SBJsonWriter.m in Sources */,
 				15C999A71BCCB607006B35B6 /* main.m in Sources */,
