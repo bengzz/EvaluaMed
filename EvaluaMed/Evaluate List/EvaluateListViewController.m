@@ -68,9 +68,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"students %lu",(unsigned long)students.count);
-    
-    return students.count;
+        NSLog(@"students %lu",(unsigned long)students.count);
+        return students.count;
 }
 
 -(void) mensajeError
@@ -89,9 +88,23 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     ECell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentsCell" forIndexPath:indexPath];
-    
     NSDictionary *miDicc = students[indexPath.row];
-    cell.labelStudentName.text = [miDicc objectForKey:@"nombre"];
+    
+    NSInteger level = [[miDicc objectForKey:@"nivel"] integerValue];
+    
+    cell.labelStudentName.text = [NSString stringWithFormat:@"%@ %@ %@",[miDicc objectForKey:@"nombre"],[miDicc objectForKey:@"apellido_p"],[miDicc objectForKey:@"apellido_m"]];
+    cell.labelStudentClass.text = [miDicc objectForKey:@"nivel"];
+    cell.labelStudentSpecialty.text = [miDicc objectForKey:@"especialidad"];
+    if (level == 1) {
+        [cell setBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:1]];
+    }
+    else if (level == 2){
+        [cell setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:0 alpha:1]];
+    }
+    else if (level == 3){
+        [cell setBackgroundColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:1]];
+    }
+    
     return cell;
 }
 
@@ -185,6 +198,8 @@
     }
     
 }
+
+#pragma mark - NSURLConnectionDelegate
 
 
 @end

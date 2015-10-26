@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" id="OqL-6O-v6d">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="TCB-lP-SpH">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -30,7 +30,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estudiante" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khd-ay-WFl">
-                                            <rect key="frame" x="38" y="19" width="82" height="21"/>
+                                            <rect key="frame" x="38" y="8" width="304" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Especialidad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-M2-NqM">
+                                            <rect key="frame" x="38" y="30" width="98" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -41,6 +47,7 @@
                                 <connections>
                                     <outlet property="labelStudentClass" destination="IoK-Jd-sg1" id="9Nm-Vp-Hbg"/>
                                     <outlet property="labelStudentName" destination="khd-ay-WFl" id="AFu-je-1Ae"/>
+                                    <outlet property="labelStudentSpecialty" destination="TwA-M2-NqM" id="6bI-78-v7y"/>
                                     <segue destination="UUQ-wE-x0W" kind="push" id="SY6-Fi-Y4D"/>
                                 </connections>
                             </tableViewCell>
@@ -51,8 +58,19 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="3eY-hv-UZU"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="2SW-pT-qpq" id="yYC-VQ-DJE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B3x-df-bLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="2SW-pT-qpq">
+                    <connections>
+                        <outlet property="delegate" destination="mh3-xy-VJf" id="Hl2-0C-nZQ"/>
+                        <outlet property="searchContentsController" destination="mh3-xy-VJf" id="68p-xz-msm"/>
+                        <outlet property="searchResultsDataSource" destination="mh3-xy-VJf" id="eP4-4F-5k2"/>
+                        <outlet property="searchResultsDelegate" destination="mh3-xy-VJf" id="tRc-cd-EZT"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="1211.5" y="-524.5"/>
         </scene>

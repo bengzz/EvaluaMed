@@ -11,5 +11,6 @@
 @interface ECell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *labelStudentName;
 @property (strong, nonatomic) IBOutlet UILabel *labelStudentClass;
+@property (strong, nonatomic) IBOutlet UILabel *labelStudentSpecialty;
 
 @end
