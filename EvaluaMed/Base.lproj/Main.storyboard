@@ -39,6 +39,8 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="labelStudentClass" destination="IoK-Jd-sg1" id="9Nm-Vp-Hbg"/>
+                                    <outlet property="labelStudentName" destination="khd-ay-WFl" id="AFu-je-1Ae"/>
                                     <segue destination="UUQ-wE-x0W" kind="push" id="SY6-Fi-Y4D"/>
                                 </connections>
                             </tableViewCell>

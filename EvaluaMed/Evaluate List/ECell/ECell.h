@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ECell : UITableViewCell
+@property (strong, nonatomic) IBOutlet UILabel *labelStudentName;
+@property (strong, nonatomic) IBOutlet UILabel *labelStudentClass;
 
 @end

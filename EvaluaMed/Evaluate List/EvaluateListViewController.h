@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EvaluateListViewController : UITableViewController
-
+@interface EvaluateListViewController : UITableViewController <NSURLConnectionDataDelegate, NSURLConnectionDelegate>
+@property (strong,nonatomic) NSURLConnection *connection;
+@property (strong, nonatomic) NSMutableData *responseData;
+@property (strong, nonatomic) NSString *validar;
 @end
