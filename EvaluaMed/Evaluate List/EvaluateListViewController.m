@@ -79,10 +79,14 @@
     return students.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 60.0;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    ECell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentsCell" forIndexPath:indexPath];
+    ECell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"StudentsCell" forIndexPath:indexPath];
     
     NSDictionary *miDicc = students[indexPath.row];
 
@@ -210,7 +214,14 @@
         }
         [searchResults removeAllObjects];
         for(NSDictionary *item in datos) {
-            if ([[item objectForKey:@"nombre"] hasPrefix:searchText]) {
+            NSString *lower = [searchText lowercaseString];
+            
+            if ([[[item objectForKey:@"nombre"] lowercaseString] hasPrefix:lower]
+                || [[[item objectForKey:@"apellido_m"] lowercaseString] hasPrefix:lower]
+                || [[[item objectForKey:@"apellido_p"] lowercaseString] hasPrefix:lower]
+                || [[[item objectForKey:@"especialidad"] lowercaseString] hasPrefix:lower]
+                || [[[item objectForKey:@"id_alumno"] lowercaseString] hasPrefix:lower]
+                || [[[item objectForKey:@"nivel"] lowercaseString] hasPrefix:lower]) {
                 [searchResults addObject:item];
             }
         }
@@ -223,14 +234,11 @@
 #pragma mark - segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    //manda la palabra clave - isbn al detail view controller
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDictionary *miDicc = students[indexPath.row];
         NSInteger integerLevel = [[miDicc objectForKey:@"nivel"] integerValue];
-        
         [[segue destinationViewController] setDetailItem:miDicc];
-        
         EvaluateViewController *destiny = [segue destinationViewController];
         destiny.integerLevel = integerLevel;
     }
