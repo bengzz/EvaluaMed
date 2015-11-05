@@ -11,5 +11,5 @@
 @interface EvaluateListViewController : UITableViewController <NSURLConnectionDataDelegate, NSURLConnectionDelegate, UISearchDisplayDelegate>
 @property (strong,nonatomic) NSURLConnection *connection;
 @property (strong, nonatomic) NSMutableData *responseData;
-@property (strong, nonatomic) NSString *validar;
+@property (strong, nonatomic) NSString *validate;
 @end

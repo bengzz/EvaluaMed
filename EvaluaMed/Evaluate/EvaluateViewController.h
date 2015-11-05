@@ -12,4 +12,7 @@
     IBOutlet UITableView *tableView;
 }
 
+@property (strong, nonatomic) id detailItem;
+@property NSInteger integerLevel;
+
 @end

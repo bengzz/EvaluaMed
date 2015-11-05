@@ -7,6 +7,7 @@
 //
 
 #import "EvaluateViewController.h"
+#import "EVCell.h"
 
 @interface EvaluateViewController ()
 
@@ -19,12 +20,48 @@
     // Do any additional setup after loading the view.
 }
 
+#pragma mark - setdetail
+
+- (void)setDetailItem:(id)newDetailItem
+{
+    if (_detailItem != newDetailItem) {
+        _detailItem = newDetailItem;
+        
+        // Update the view.
+        [self configureView];
+    }
+}
+
+- (void)configureView
+{
+    // Update the user interface for the detail item.
+    
+    if (self.detailItem) {
+        NSLog(@"nivel %ld", (long)self.integerLevel);
+    }
+}
+
+#pragma mark - Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    if (self.integerLevel == 1) {
+        return 5;
+    }
+    else if (self.integerLevel == 2){
+        return 6;
+    }
+    else
+        return 7;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"thisCell"];
+    EVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellEvaluate" forIndexPath:indexPath];
+    cell.labelDescription.text = @"hola";
     return cell;
 }
 
@@ -33,14 +70,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Evaluate
+- (IBAction)buttonEvaluate:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+
 }
-*/
 
 @end
