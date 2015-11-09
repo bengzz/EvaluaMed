@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1528D5F31BEBCB9300729183 /* EVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528D5F21BEBCB9300729183 /* EVCell.m */; };
+		155988EA1BF1177100735DED /* EvaluateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155988E91BF1177100735DED /* EvaluateTableViewController.m */; };
+		155988ED1BF1198C00735DED /* EVACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 155988EC1BF1198C00735DED /* EVACell.m */; };
 		15C999A71BCCB607006B35B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999A61BCCB607006B35B6 /* main.m */; };
 		15C999AA1BCCB607006B35B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999A91BCCB607006B35B6 /* AppDelegate.m */; };
 		15C999B01BCCB607006B35B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C999AE1BCCB607006B35B6 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		15FB03231BCD96AE00A892E9 /* ECell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB031D1BCD96AE00A892E9 /* ECell.m */; };
 		15FB03241BCD96AE00A892E9 /* EvaluateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB031F1BCD96AE00A892E9 /* EvaluateListViewController.m */; };
 		15FB03251BCD96AE00A892E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB03221BCD96AE00A892E9 /* ViewController.m */; };
-		15FB032C1BCD9C5200A892E9 /* EvaluateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB032B1BCD9C5200A892E9 /* EvaluateViewController.m */; };
 		15FB032E1BCDA5BB00A892E9 /* pEvaluate.png in Resources */ = {isa = PBXBuildFile; fileRef = 15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */; };
 		15FB03491BCDACEF00A892E9 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB03311BCDACEF00A892E9 /* NSObject+SBJson.m */; };
 		15FB034A1BCDACEF00A892E9 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FB03341BCDACEF00A892E9 /* SBJsonParser.m */; };
@@ -50,8 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1528D5F11BEBCB9300729183 /* EVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVCell.h; path = Evaluate/EVCell/EVCell.h; sourceTree = "<group>"; };
-		1528D5F21BEBCB9300729183 /* EVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EVCell.m; path = Evaluate/EVCell/EVCell.m; sourceTree = "<group>"; };
+		155988E81BF1177100735DED /* EvaluateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvaluateTableViewController.h; path = Evaluate/EvaluateTableViewController.h; sourceTree = "<group>"; };
+		155988E91BF1177100735DED /* EvaluateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvaluateTableViewController.m; path = Evaluate/EvaluateTableViewController.m; sourceTree = "<group>"; };
+		155988EB1BF1198C00735DED /* EVACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVACell.h; path = Evaluate/EVACell/EVACell.h; sourceTree = "<group>"; };
+		155988EC1BF1198C00735DED /* EVACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EVACell.m; path = Evaluate/EVACell/EVACell.m; sourceTree = "<group>"; };
 		15C999A11BCCB607006B35B6 /* EvaluaMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaluaMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C999A51BCCB607006B35B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C999A61BCCB607006B35B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,8 +79,6 @@
 		15FB031F1BCD96AE00A892E9 /* EvaluateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluateListViewController.m; sourceTree = "<group>"; };
 		15FB03211BCD96AE00A892E9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		15FB03221BCD96AE00A892E9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		15FB032A1BCD9C5200A892E9 /* EvaluateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EvaluateViewController.h; path = Evaluate/EvaluateViewController.h; sourceTree = "<group>"; };
-		15FB032B1BCD9C5200A892E9 /* EvaluateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvaluateViewController.m; path = Evaluate/EvaluateViewController.m; sourceTree = "<group>"; };
 		15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pEvaluate.png; sourceTree = "<group>"; };
 		15FB03301BCDACEF00A892E9 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
 		15FB03311BCDACEF00A892E9 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
@@ -125,13 +125,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1528D5F41BEBCB9800729183 /* EVCell */ = {
+		155988EE1BF1199200735DED /* EVACell */ = {
 			isa = PBXGroup;
 			children = (
-				1528D5F11BEBCB9300729183 /* EVCell.h */,
-				1528D5F21BEBCB9300729183 /* EVCell.m */,
+				155988EB1BF1198C00735DED /* EVACell.h */,
+				155988EC1BF1198C00735DED /* EVACell.m */,
 			);
-			name = EVCell;
+			name = EVACell;
 			sourceTree = "<group>";
 		};
 		15C999981BCCB607006B35B6 = {
@@ -259,9 +259,9 @@
 		15FB03291BCD99AE00A892E9 /* Evaluate */ = {
 			isa = PBXGroup;
 			children = (
-				1528D5F41BEBCB9800729183 /* EVCell */,
-				15FB032A1BCD9C5200A892E9 /* EvaluateViewController.h */,
-				15FB032B1BCD9C5200A892E9 /* EvaluateViewController.m */,
+				155988EE1BF1199200735DED /* EVACell */,
+				155988E81BF1177100735DED /* EvaluateTableViewController.h */,
+				155988E91BF1177100735DED /* EvaluateTableViewController.m */,
 			);
 			name = Evaluate;
 			sourceTree = "<group>";
@@ -406,21 +406,21 @@
 				15FB03521BCDACEF00A892E9 /* SBJsonTokeniser.m in Sources */,
 				15FB03251BCD96AE00A892E9 /* ViewController.m in Sources */,
 				15C999AA1BCCB607006B35B6 /* AppDelegate.m in Sources */,
+				155988ED1BF1198C00735DED /* EVACell.m in Sources */,
 				15FB034E1BCDACEF00A892E9 /* SBJsonStreamParserState.m in Sources */,
 				15FB03241BCD96AE00A892E9 /* EvaluateListViewController.m in Sources */,
-				15FB032C1BCD9C5200A892E9 /* EvaluateViewController.m in Sources */,
 				15D3A5831BD94F9B00B56E65 /* GetBackViewController.m in Sources */,
 				15FB03191BCD968E00A892E9 /* Networking.m in Sources */,
 				15FB03541BCDACEF00A892E9 /* SBJsonWriter.m in Sources */,
 				15C999A71BCCB607006B35B6 /* main.m in Sources */,
 				15FB034C1BCDACEF00A892E9 /* SBJsonStreamParserAccumulator.m in Sources */,
 				15FB034A1BCDACEF00A892E9 /* SBJsonParser.m in Sources */,
+				155988EA1BF1177100735DED /* EvaluateTableViewController.m in Sources */,
 				15FB03491BCDACEF00A892E9 /* NSObject+SBJson.m in Sources */,
 				15FB03531BCDACEF00A892E9 /* SBJsonUTF8Stream.m in Sources */,
 				15FB03231BCD96AE00A892E9 /* ECell.m in Sources */,
 				15FB03501BCDACEF00A892E9 /* SBJsonStreamWriterAccumulator.m in Sources */,
 				15FB034F1BCDACEF00A892E9 /* SBJsonStreamWriter.m in Sources */,
-				1528D5F31BEBCB9300729183 /* EVCell.m in Sources */,
 				15FB03511BCDACEF00A892E9 /* SBJsonStreamWriterState.m in Sources */,
 				15FB034B1BCDACEF00A892E9 /* SBJsonStreamParser.m in Sources */,
 				15FB034D1BCDACEF00A892E9 /* SBJsonStreamParserAdapter.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "EvaluateListViewController.h"
-#import "EvaluateViewController.h"
+#import "EvaluateTableViewController.h"
 #import "ECell.h"
 
 @interface EvaluateListViewController (){
@@ -239,7 +239,7 @@
         NSDictionary *miDicc = students[indexPath.row];
         NSInteger integerLevel = [[miDicc objectForKey:@"nivel"] integerValue];
         [[segue destinationViewController] setDetailItem:miDicc];
-        EvaluateViewController *destiny = [segue destinationViewController];
+        EvaluateTableViewController *destiny = [segue destinationViewController];
         destiny.integerLevel = integerLevel;
     }
 }

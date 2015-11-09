@@ -51,7 +51,7 @@
                                     <outlet property="labelStudentClass" destination="IoK-Jd-sg1" id="9Nm-Vp-Hbg"/>
                                     <outlet property="labelStudentName" destination="khd-ay-WFl" id="AFu-je-1Ae"/>
                                     <outlet property="labelStudentSpecialty" destination="TwA-M2-NqM" id="6bI-78-v7y"/>
-                                    <segue destination="UUQ-wE-x0W" kind="push" identifier="showDetail" id="SY6-Fi-Y4D"/>
+                                    <segue destination="YcV-KF-LtA" kind="push" identifier="showDetail" id="Ta3-To-uTQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -132,121 +132,56 @@
             </objects>
             <point key="canvasLocation" x="637.5" y="266.5"/>
         </scene>
-        <!--Evaluate View Controller-->
-        <scene sceneID="vVJ-eL-O7B">
+        <!--Evaluate Table View Controller-->
+        <scene sceneID="aWV-6p-TTX">
             <objects>
-                <viewController id="UUQ-wE-x0W" customClass="EvaluateViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vi7-49-tK5"/>
-                        <viewControllerLayoutGuide type="bottom" id="s57-0G-tqY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nhx-2Y-vZw">
+                <tableViewController id="YcV-KF-LtA" customClass="EvaluateTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="140" sectionHeaderHeight="22" sectionFooterHeight="22" id="mVg-fh-9hV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV4-F2-HVO">
-                                <rect key="frame" x="130" y="617" width="114" height="40"/>
-                                <state key="normal" image="pEvaluate.png">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellEvaluate" rowHeight="140" id="AG6-Io-sLB" customClass="EVACell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AG6-Io-sLB" id="5c8-TO-LwQ">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHO-9S-YQ3">
+                                            <rect key="frame" x="80" y="49" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelDescription" destination="PHO-9S-YQ3" id="v9X-ZT-To4"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="YcV-KF-LtA" id="mr7-et-jk3"/>
+                            <outlet property="delegate" destination="YcV-KF-LtA" id="Sqb-hG-RSA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="PgA-v1-ttw">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="ltN-jq-rDm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Fv-jq-U1r">
+                                <rect key="frame" x="-23" y="-15" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enviar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonEvaluate:" destination="UUQ-wE-x0W" eventType="touchUpInside" id="aOX-Io-dgD"/>
+                                    <action selector="selfnavigationControllerpopViewControllerAnimatedYESbuttonSend:" destination="YcV-KF-LtA" eventType="touchUpInside" id="2Pa-d7-U6D"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="wbb-NT-Zjc">
-                                <rect key="frame" x="0.0" y="64" width="375" height="545"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellEvaluate" rowHeight="60" id="SiB-cN-V9u" customClass="EVCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SiB-cN-V9u" id="MKq-uI-PN6">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vn-DC-O7E">
-                                                    <rect key="frame" x="0.0" y="19" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xcb-pJ-XUc">
-                                                    <rect key="frame" x="79" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="5">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfV-9f-c8i">
-                                                    <rect key="frame" x="117" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="6">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylb-q3-e1I">
-                                                    <rect key="frame" x="155" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="7">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p08-Ad-mEH">
-                                                    <rect key="frame" x="193" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="7.5">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ml6-Rh-bnK">
-                                                    <rect key="frame" x="231" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="8">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSc-rB-Xxv">
-                                                    <rect key="frame" x="269" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="9">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjJ-g0-Ofm">
-                                                    <rect key="frame" x="307" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="9.5">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1Z-dO-ozM">
-                                                    <rect key="frame" x="345" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="10">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uU-TZ-Xnd">
-                                                    <rect key="frame" x="41" y="15" width="30" height="30"/>
-                                                    <state key="normal" title="4">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="labelDescription" destination="7Vn-DC-O7E" id="DjL-4V-aIN"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="UUQ-wE-x0W" id="92t-lx-DuY"/>
-                                    <outlet property="delegate" destination="UUQ-wE-x0W" id="fsg-j4-tZX"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ZFM-NX-KWO"/>
-                    <connections>
-                        <outlet property="tableView" destination="wbb-NT-Zjc" id="dYU-Mr-ewp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vA2-8U-bfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYV-i1-qWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748.5" y="-524.5"/>
+            <point key="canvasLocation" x="1692.5" y="-524.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -404,7 +339,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pEvaluate.png" width="114" height="40"/>
         <image name="pLogin.png" width="150" height="50"/>
         <image name="pSend.png" width="102" height="40"/>
         <image name="pTec.png" width="1642" height="900"/>
