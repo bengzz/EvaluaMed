@@ -9,7 +9,20 @@
 #import "EvaluateTableViewController.h"
 #import "EVACell.h"
 
+@interface EvaluateTableViewController (){
+    NSArray *arrayTitle;
+    NSArray *arrayDescription;
+}
+
+@end
+
 @implementation EvaluateTableViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    arrayTitle = [NSArray arrayWithObjects: @"1. Juicio Clínico", @"2. Aplicación conocimiento médico", @"3. Aplicación habilidades clínicas: Interrogatorio", @"Exploración Física", @"Expediente Clínico", @"Comportamiento quirúrgico", @"4. Comunicación Efectiva", @"5. Desempeño en sistema salud", @"6. Desarrollo Personal", @"7. Impresión General del Alumno", nil];
+    // Do any additional setup after loading the view, typically from a nib.
+}
 
 #pragma mark - setdetail
 
@@ -45,14 +58,14 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 140.0;
+    return 220.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
     EVACell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CellEvaluate" forIndexPath:indexPath];
-    cell.labelDescription.text = @"hola";
+    cell.labelTitle.text = [arrayTitle objectAtIndex: indexPath.row];
     return cell;
 }
 
