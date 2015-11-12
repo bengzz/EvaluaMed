@@ -21,6 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     arrayTitle = [NSArray arrayWithObjects: @"1. Juicio Clínico", @"2. Aplicación conocimiento médico", @"3. Aplicación habilidades clínicas: Interrogatorio", @"Exploración Física", @"Expediente Clínico", @"Comportamiento quirúrgico", @"4. Comunicación Efectiva", @"5. Desempeño en sistema salud", @"6. Desarrollo Personal", @"7. Impresión General del Alumno", nil];
+    
+    arrayDescription = [NSArray arrayWithObjects: @"Es capaz de relacionar la situación clínica que se le presenta con su conocimiento médico. Conoce los métodos diagnósticos y tratamiento al nivel del curso.", @"Actualizado, extenso, organizado, adecuado al nivel del curso.", @"Bien dirigido, lógico, completo.", @"Completa, organizada, bien dirigida.", @"Expediente clínico ordenado, bien integrado, da seguimiento al paciente.", @"Conoce el paciente, sus diagnósticos, anatomía, técnica quirúrgica y potenciales complicaciones.", @"Tiene una comunicación efectiva con el paciente y su familia, excelente comunicación oral, escrita y telefónica.", @"Demuestra respeto, compasión, empatía con el paciente y su familia. Busca el mayor beneficio del paciente, respeta a otros alumnos, profesores, residentes y personal de salud.", @"Siempre llega a tiempo, cuida su apariencia, demuestra interés por aprender. Reconoce debilidades y fortalezas. Cumple siempre sus compromisos. Busca la excelencia.", @"", nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -58,7 +60,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 220.0;
+    return 265.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -66,6 +68,7 @@
     
     EVACell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CellEvaluate" forIndexPath:indexPath];
     cell.labelTitle.text = [arrayTitle objectAtIndex: indexPath.row];
+    cell.labelDescription.text = [arrayDescription objectAtIndex:indexPath.row];
     return cell;
 }
 

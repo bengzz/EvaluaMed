@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		155988EA1BF1177100735DED /* EvaluateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155988E91BF1177100735DED /* EvaluateTableViewController.m */; };
 		155988ED1BF1198C00735DED /* EVACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 155988EC1BF1198C00735DED /* EVACell.m */; };
+		15AB015E1BF1A82800E709FC /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB01551BF1A82800E709FC /* 10.png */; };
+		15AB015F1BF1A82800E709FC /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB01561BF1A82800E709FC /* 4.png */; };
+		15AB01601BF1A82800E709FC /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB01571BF1A82800E709FC /* 5.png */; };
+		15AB01611BF1A82800E709FC /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB01581BF1A82800E709FC /* 6.png */; };
+		15AB01621BF1A82800E709FC /* 7.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB01591BF1A82800E709FC /* 7.5.png */; };
+		15AB01631BF1A82800E709FC /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB015A1BF1A82800E709FC /* 7.png */; };
+		15AB01641BF1A82800E709FC /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB015B1BF1A82800E709FC /* 8.png */; };
+		15AB01651BF1A82800E709FC /* 9.5.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB015C1BF1A82800E709FC /* 9.5.png */; };
+		15AB01661BF1A82800E709FC /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 15AB015D1BF1A82800E709FC /* 9.png */; };
 		15C999A71BCCB607006B35B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999A61BCCB607006B35B6 /* main.m */; };
 		15C999AA1BCCB607006B35B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999A91BCCB607006B35B6 /* AppDelegate.m */; };
 		15C999B01BCCB607006B35B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15C999AE1BCCB607006B35B6 /* Main.storyboard */; };
@@ -54,6 +63,15 @@
 		155988E91BF1177100735DED /* EvaluateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvaluateTableViewController.m; path = Evaluate/EvaluateTableViewController.m; sourceTree = "<group>"; };
 		155988EB1BF1198C00735DED /* EVACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVACell.h; path = Evaluate/EVACell/EVACell.h; sourceTree = "<group>"; };
 		155988EC1BF1198C00735DED /* EVACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EVACell.m; path = Evaluate/EVACell/EVACell.m; sourceTree = "<group>"; };
+		15AB01551BF1A82800E709FC /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
+		15AB01561BF1A82800E709FC /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		15AB01571BF1A82800E709FC /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		15AB01581BF1A82800E709FC /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		15AB01591BF1A82800E709FC /* 7.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.5.png; sourceTree = "<group>"; };
+		15AB015A1BF1A82800E709FC /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		15AB015B1BF1A82800E709FC /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		15AB015C1BF1A82800E709FC /* 9.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.5.png; sourceTree = "<group>"; };
+		15AB015D1BF1A82800E709FC /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		15C999A11BCCB607006B35B6 /* EvaluaMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaluaMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C999A51BCCB607006B35B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15C999A61BCCB607006B35B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -134,6 +152,22 @@
 			name = EVACell;
 			sourceTree = "<group>";
 		};
+		15AB01541BF1A82800E709FC /* Evaluate */ = {
+			isa = PBXGroup;
+			children = (
+				15AB01551BF1A82800E709FC /* 10.png */,
+				15AB01561BF1A82800E709FC /* 4.png */,
+				15AB01571BF1A82800E709FC /* 5.png */,
+				15AB01581BF1A82800E709FC /* 6.png */,
+				15AB01591BF1A82800E709FC /* 7.5.png */,
+				15AB015A1BF1A82800E709FC /* 7.png */,
+				15AB015B1BF1A82800E709FC /* 8.png */,
+				15AB015C1BF1A82800E709FC /* 9.5.png */,
+				15AB015D1BF1A82800E709FC /* 9.png */,
+			);
+			path = Evaluate;
+			sourceTree = "<group>";
+		};
 		15C999981BCCB607006B35B6 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +235,7 @@
 		15C999D31BCCB683006B35B6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				15AB01541BF1A82800E709FC /* Evaluate */,
 				15D3A5851BD9523400B56E65 /* pSend.png */,
 				15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */,
 				15C999D61BCCB683006B35B6 /* pLogin.png */,
@@ -378,13 +413,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AB01641BF1A82800E709FC /* 8.png in Resources */,
+				15AB01601BF1A82800E709FC /* 5.png in Resources */,
 				15C999B01BCCB607006B35B6 /* Main.storyboard in Resources */,
 				15C999E71BCCB683006B35B6 /* pTec.png in Resources */,
+				15AB01631BF1A82800E709FC /* 7.png in Resources */,
 				15C999E41BCCB683006B35B6 /* pLogin.png in Resources */,
+				15AB01651BF1A82800E709FC /* 9.5.png in Resources */,
 				15FB032E1BCDA5BB00A892E9 /* pEvaluate.png in Resources */,
 				15C999B51BCCB607006B35B6 /* LaunchScreen.xib in Resources */,
+				15AB01661BF1A82800E709FC /* 9.png in Resources */,
+				15AB01611BF1A82800E709FC /* 6.png in Resources */,
+				15AB015E1BF1A82800E709FC /* 10.png in Resources */,
+				15AB01621BF1A82800E709FC /* 7.5.png in Resources */,
 				15C999B21BCCB607006B35B6 /* Images.xcassets in Resources */,
 				15D3A5861BD9523400B56E65 /* pSend.png in Resources */,
+				15AB015F1BF1A82800E709FC /* 4.png in Resources */,
 				15C999E51BCCB683006B35B6 /* pLogout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
