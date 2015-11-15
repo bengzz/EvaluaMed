@@ -69,7 +69,38 @@
     EVACell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"CellEvaluate" forIndexPath:indexPath];
     cell.labelTitle.text = [arrayTitle objectAtIndex: indexPath.row];
     cell.labelDescription.text = [arrayDescription objectAtIndex:indexPath.row];
+    
+    cell.button40.tag = indexPath.row;
+    cell.button50.tag = indexPath.row;
+    cell.button60.tag = indexPath.row;
+    cell.button70.tag = indexPath.row;
+    cell.button75.tag = indexPath.row;
+    cell.button80.tag = indexPath.row;
+    cell.button90.tag = indexPath.row;
+    cell.button95.tag = indexPath.row;
+    cell.button100.tag = indexPath.row;
+    
+    [cell.button40 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button50 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button60 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button70 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button75 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button80 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button90 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button95 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.button100 addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
     return cell;
+}
+
+
+-(void)yourButtonClicked:(UIButton*)sender
+{
+    if (sender.tag == 0)
+    {
+        //aqui puedo cambiar el color
+        NSLog(@"hola");
+    }
 }
 
 - (IBAction)selfnavigationControllerpopViewControllerAnimatedYESbuttonSend:(id)sender {
