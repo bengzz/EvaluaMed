@@ -237,10 +237,9 @@
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSDictionary *miDicc = students[indexPath.row];
-        NSInteger integerLevel = [[miDicc objectForKey:@"nivel"] integerValue];
         [[segue destinationViewController] setDetailItem:miDicc];
         EvaluateTableViewController *destiny = [segue destinationViewController];
-        destiny.integerLevel = integerLevel;
+        destiny.professorID = self.professorID;
     }
 }
 @end

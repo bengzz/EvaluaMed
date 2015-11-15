@@ -7,6 +7,7 @@
 //
 
 #import "EvaluateTableViewController.h"
+#import "FinalDestinationViewController.h"
 #import "EVACell.h"
 
 @interface EvaluateTableViewController (){
@@ -37,18 +38,6 @@
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
-    }
-}
-
-- (void)configureView
-{
-    // Update the user interface for the detail item.
-    
-    if (self.detailItem) {
-        NSLog(@"nivel %ld", (long)self.integerLevel);
     }
 }
 
@@ -191,8 +180,17 @@
 }
 
 - (IBAction)selfnavigationControllerpopViewControllerAnimatedYESbuttonSend:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
     //pasar arreglo y hacer la suma en la siguiente vista
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        [[segue destinationViewController] setDetailItem:_detailItem];
+        FinalDestinationViewController *destiny = [segue destinationViewController];
+        destiny.professorID = self.professorID;
+    }
 }
 
 

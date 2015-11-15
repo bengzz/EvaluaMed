@@ -253,10 +253,32 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="AvQ-Am-AXU" kind="push" identifier="showDetail" id="0Cj-LR-trv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYV-i1-qWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1649.5" y="-524.5"/>
+        </scene>
+        <!--Final Destination View Controller-->
+        <scene sceneID="ubw-EK-7aZ">
+            <objects>
+                <viewController id="AvQ-Am-AXU" customClass="FinalDestinationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UC2-WV-qC2"/>
+                        <viewControllerLayoutGuide type="bottom" id="9wY-WD-bhS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n1X-OX-Zq5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nOg-1w-P1A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E1T-V7-Jmn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159.5" y="-524.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">

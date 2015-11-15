@@ -115,6 +115,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([[segue identifier] isEqualToString:@"showList"]) {
+        EvaluateListViewController *destiny = [segue destinationViewController];
+        destiny.professorID = self.labelUser.text;
+    }
 }
 
 @end

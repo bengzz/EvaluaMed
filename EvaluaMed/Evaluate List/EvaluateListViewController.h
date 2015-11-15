@@ -12,4 +12,6 @@
 @property (strong,nonatomic) NSURLConnection *connection;
 @property (strong, nonatomic) NSMutableData *responseData;
 @property (strong, nonatomic) NSString *validate;
+@property (strong, nonatomic) NSString *professorID;
+
 @end
