@@ -101,6 +101,36 @@
     
     [cell.buttonInfo addTarget:self action:@selector(ButtonInfoClicked:) forControlEvents:UIControlEventTouchUpInside];
     
+    [cell.button60 setImage:[UIImage imageNamed:@"6.png"] forState:UIControlStateNormal];
+    [cell.button70 setImage:[UIImage imageNamed:@"7.png"] forState:UIControlStateNormal];
+    [cell.button75 setImage:[UIImage imageNamed:@"7.5.png"] forState:UIControlStateNormal];
+    [cell.button80 setImage:[UIImage imageNamed:@"8.png"] forState:UIControlStateNormal];
+    [cell.button90 setImage:[UIImage imageNamed:@"9.png"] forState:UIControlStateNormal];
+    [cell.button95 setImage:[UIImage imageNamed:@"9.5.png"] forState:UIControlStateNormal];
+    [cell.button100 setImage:[UIImage imageNamed:@"10.png"] forState:UIControlStateNormal];
+
+    if (grade[indexPath.row] == 6) {
+        [cell.button60 setImage:[UIImage imageNamed:@"6b.png"] forState:UIControlStateNormal];
+    }
+    else if (grade[indexPath.row] == 7) {
+        [cell.button70 setImage:[UIImage imageNamed:@"7b.png"] forState:UIControlStateNormal];
+    }
+    else if (grade[indexPath.row] == 7.5) {
+        [cell.button75 setImage:[UIImage imageNamed:@"7.5b.png"] forState:UIControlStateNormal];
+    }
+    else if (grade[indexPath.row] == 8) {
+        [cell.button80 setImage:[UIImage imageNamed:@"8b.png"] forState:UIControlStateNormal];
+    }
+    else if (grade[indexPath.row] == 9) {
+        [cell.button90 setImage:[UIImage imageNamed:@"9b.png"] forState:UIControlStateNormal];
+    }
+    else if (grade[indexPath.row] == 9.5) {
+        [cell.button95 setImage:[UIImage imageNamed:@"9.5b.png"] forState:UIControlStateNormal];
+    }
+    else if (grade[indexPath.row] == 10) {
+        [cell.button100 setImage:[UIImage imageNamed:@"10b.png"] forState:UIControlStateNormal];
+    }
+    
     return cell;
 }
 
@@ -108,64 +138,39 @@
 -(void)yourButtonClicked:(UIButton*)sender
 {
     NSInteger gradeNumber = grade[sender.tag] * 10;
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:sender.tag inSection:0];
+    NSArray *indexPaths = [[NSArray alloc] initWithObjects:indexPath, nil];
+    grade[sender.tag] = 0;
     if ([sender.titleLabel.text isEqualToString:@"60"]) {
         if (gradeNumber != 60) {
             grade[sender.tag] = 6;
-            //                cell.button60.imageView.image = [UIImage imageNamed:@"6b.png"];
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
+        }}
     else if ([sender.titleLabel.text isEqualToString:@"70"]) {
         if (gradeNumber != 70) {
             grade[sender.tag] = 7;
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
+        }}
     else if ([sender.titleLabel.text isEqualToString:@"75"]) {
         if (gradeNumber != 75) {
             grade[sender.tag] = 7.5;
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
+        }}
     else if ([sender.titleLabel.text isEqualToString:@"80"]) {
         if (gradeNumber != 80) {
             grade[sender.tag] = 8;
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
+        }}
     else if ([sender.titleLabel.text isEqualToString:@"90"]) {
         if (gradeNumber != 90) {
             grade[sender.tag] = 9;
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
+        }}
     else if ([sender.titleLabel.text isEqualToString:@"95"]) {
         if (gradeNumber != 95) {
             grade[sender.tag] = 9.5;
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
+        }}
     else if ([sender.titleLabel.text isEqualToString:@"100"]) {
         if (gradeNumber != 100) {
             grade[sender.tag] = 10;
-        }
-        else{
-            grade[sender.tag] = 0;
-        }
-    }
-    //ver como cambiar color de celdas
+        }}
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+    NSLog(@"valor %f", grade[sender.tag]);
 }
 
 #pragma mark - info
