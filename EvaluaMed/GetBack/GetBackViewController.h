@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GetBackViewController : UIViewController
+@interface GetBackViewController : UIViewController <UITextFieldDelegate>
 
 @end

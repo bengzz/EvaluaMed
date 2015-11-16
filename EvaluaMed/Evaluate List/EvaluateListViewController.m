@@ -242,4 +242,15 @@
         destiny.professorID = self.professorID;
     }
 }
+
+#pragma mark - keyboard
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[self view] endEditing:YES];
+}
 @end

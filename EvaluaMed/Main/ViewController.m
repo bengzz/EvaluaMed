@@ -24,6 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.labelUser.delegate = self;
+    self.labelPassword.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -119,6 +121,17 @@
         EvaluateListViewController *destiny = [segue destinationViewController];
         destiny.professorID = self.labelUser.text;
     }
+}
+
+#pragma mark - keyboard
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[self view] endEditing:YES];
 }
 
 @end

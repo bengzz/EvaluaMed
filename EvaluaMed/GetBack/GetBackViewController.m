@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.labelUser.delegate = self;
     // Do any additional setup after loading the view.
 }
 
@@ -101,5 +103,16 @@
     else{
         [self alertStatus:@"Favor de ingresar Usuario correctamente" :@"Error"];
     }
+}
+
+#pragma mark - keyboard
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[self view] endEditing:YES];
 }
 @end
