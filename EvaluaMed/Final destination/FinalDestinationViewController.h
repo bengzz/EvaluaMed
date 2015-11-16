@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FinalDestinationViewController : UIViewController <UITextFieldDelegate>
+@interface FinalDestinationViewController : UIViewController <UITextFieldDelegate, UINavigationControllerDelegate>
 
 @property (strong, nonatomic) id detailItem;
 @property (strong, nonatomic) NSString *professorID;
