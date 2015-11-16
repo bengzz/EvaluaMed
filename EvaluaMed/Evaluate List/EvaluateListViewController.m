@@ -136,9 +136,9 @@
 -(void) connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
-    int statusCode = [httpResponse statusCode];
+    NSInteger statusCode = [httpResponse statusCode];
     //escribir en el debugger
-    NSLog(@"status code %d",statusCode);
+    NSLog(@"status code %ld",(long)statusCode);
     
     if (statusCode == 200 ) {
         self.validate = @"good";

@@ -12,5 +12,7 @@
 
 @property (strong, nonatomic) id detailItem;
 @property (strong, nonatomic) NSString *professorID;
+@property (strong, nonatomic) NSMutableArray *grades;
+@property (nonatomic) float average;
 
 @end

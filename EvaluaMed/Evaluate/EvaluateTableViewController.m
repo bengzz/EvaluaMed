@@ -13,7 +13,9 @@
 @interface EvaluateTableViewController (){
     NSArray *arrayTitle;
     NSArray *arrayDescription;
+    NSMutableArray *grades;
     float grade[9];
+    float average;
 }
 
 @end
@@ -25,6 +27,8 @@
     arrayTitle = [NSArray arrayWithObjects: @"1. Juicio Clínico", @"2. Aplicación conocimiento médico", @"3. Aplicación habilidades clínicas: Interrogatorio", @"Exploración Física", @"Expediente Clínico", @"Comportamiento quirúrgico", @"4. Comunicación Efectiva", @"5. Desempeño en sistema salud", @"6. Desarrollo Personal", nil];
     
     arrayDescription = [NSArray arrayWithObjects: @"Es capaz de relacionar la situación clínica que se le presenta con su conocimiento médico. Conoce los métodos diagnósticos y tratamiento al nivel del curso.", @"Actualizado, extenso, organizado, adecuado al nivel del curso.", @"Bien dirigido, lógico, completo.", @"Completa, organizada, bien dirigida.", @"Expediente clínico ordenado, bien integrado, da seguimiento al paciente.", @"Conoce el paciente, sus diagnósticos, anatomía, técnica quirúrgica y potenciales complicaciones.", @"Tiene una comunicación efectiva con el paciente y su familia, excelente comunicación oral, escrita y telefónica.", @"Demuestra respeto, compasión, empatía con el paciente y su familia. Busca el mayor beneficio del paciente, respeta a otros alumnos, profesores, residentes y personal de salud.", @"Siempre llega a tiempo, cuida su apariencia, demuestra interés por aprender. Reconoce debilidades y fortalezas. Cumple siempre sus compromisos. Busca la excelencia.", nil];
+    
+    grades = [[NSMutableArray alloc] init];
     
     for (NSInteger i = 0; i < 9; i++)
         grade[i] = 0;
@@ -159,7 +163,6 @@
             grade[sender.tag] = 10;
         }}
     [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
-    NSLog(@"valor %f", grade[sender.tag]);
 }
 
 #pragma mark - info
@@ -180,6 +183,23 @@
 }
 
 - (IBAction)selfnavigationControllerpopViewControllerAnimatedYESbuttonSend:(id)sender {
+    float checks = 0.0;
+    float sum = 0.0;
+    average = 0.0;
+    [grades removeAllObjects];
+    for (int i = 0; i < 9; i++) {
+        NSNumber *number = [NSNumber numberWithFloat:grade[i]];
+        [grades addObject:number];
+        
+        if (grade[i] != 0) {
+            checks++;
+            sum += grade[i];
+        }
+    }
+    
+    if (checks != 0.0) {
+        average = sum/checks;
+    }
     [self performSegueWithIdentifier:@"showDetail" sender:self];
     //pasar arreglo y hacer la suma en la siguiente vista
 }
@@ -190,6 +210,8 @@
         [[segue destinationViewController] setDetailItem:_detailItem];
         FinalDestinationViewController *destiny = [segue destinationViewController];
         destiny.professorID = self.professorID;
+        destiny.grades = [NSMutableArray arrayWithArray:grades];
+        destiny.average = average;
     }
 }
 

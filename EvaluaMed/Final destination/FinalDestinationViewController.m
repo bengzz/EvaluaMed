@@ -10,6 +10,11 @@
 
 @implementation FinalDestinationViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSLog(@"grado %f", self.average);
+}
+
 #pragma mark - setdetail
 
 - (void)setDetailItem:(id)newDetailItem
