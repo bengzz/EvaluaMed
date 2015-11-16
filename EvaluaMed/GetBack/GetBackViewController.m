@@ -77,29 +77,29 @@
                     NSLog(@"%ld",(long)success);
                     if(success == 1)
                     {
-                        [self alertStatus:@"Password Recovery Successfully." :@"Password Recovery Successfully!"];
+                        [self alertStatus:@"Envio de correo" :@"Recuperación de contraseña exitosa!"];
                         [self.navigationController popViewControllerAnimated:YES];
                         
                     } else {
                         
                         NSString *error_msg = (NSString *) [jsonData objectForKey:@"error_message"];
-                        [self alertStatus:error_msg :@"Password Recovery Failed"];
+                        [self alertStatus:error_msg :@"Recuperación de contraseña fallido"];
                     }
                     
                 } else {
                     if (error) NSLog(@"Error: %@", error);
-                    [self alertStatus:@"Password Recovery Failed" :@"Password Recovery Failed"];
+                    [self alertStatus:@"Recuperación de contraseña fallido" :@"Error"];
                 }
             }
         @catch (NSException * e) {
             NSLog(@"Exception: %@", e);
-            [self alertStatus:@"Password Recovery Successfully." :@"Password Recovery Successfully!"];
+            [self alertStatus:@"Envio de correo" :@"Recuperación de contraseña."];
             [self.navigationController popViewControllerAnimated:YES];
         }
 
     }
     else{
-        [self alertStatus:@"Please enter correctly Username" :@"Password Recovery Failed!"];
+        [self alertStatus:@"Favor de ingresar Usuario correctamente" :@"Error"];
     }
 }
 @end

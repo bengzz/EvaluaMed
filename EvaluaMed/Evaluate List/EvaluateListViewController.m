@@ -58,7 +58,7 @@
 {
     
     UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                     message:@"No students found"
+                                                     message:@"No se pudo obtener la lista de estudiantes"
                                                     delegate:self
                                            cancelButtonTitle:@"Ok"
                                            otherButtonTitles:nil];
@@ -179,7 +179,7 @@
     if (error.code == -1009) {
         NSLog(@"There IS NO internet connection");
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                         message:@"No internet connection"
+                                                         message:@"No hay conexión de internet, intentar nuevamente"
                                                         delegate:self
                                                cancelButtonTitle:@"Ok"
                                                otherButtonTitles:nil];
@@ -187,7 +187,7 @@
         
     } else if (error.code == -1003) {
         UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                         message:@"No connection to server"
+                                                         message:@"No hay conexión al servidor, intentar nuevamente"
                                                         delegate:self
                                                cancelButtonTitle:@"Ok"
                                                otherButtonTitles:nil];

@@ -53,7 +53,7 @@
 
         
         if([self.labelUser.text isEqualToString:@""] || [self.labelPassword.text isEqualToString:@""] ) {
-            [self alertStatus:@"Please enter both Username and Password" :@"Login Failed!"];
+            [self alertStatus:@"Favor de ingresar Usuario y Contraseña correctamente" :@"Login Fallido!"];
         } else {
             NSString *post =[[NSString alloc] initWithFormat:@"usuario=%@&password=%@",self.labelUser.text,self.labelPassword.text];
             NSLog(@"PostData: %@",post);
@@ -91,25 +91,25 @@
                 NSLog(@"%ld",(long)success);
                 if(success == 1)
                 {
-                    NSLog(@"Login SUCCESS");
-                    [self alertStatus:@"Logged in Successfully." :@"Login Success!"];
+                    NSLog(@"Login Exitoso!");
+                    [self alertStatus:@"Bienvenido" :@"Login Exitoso!"];
                     [self performSegueWithIdentifier:@"showList" sender:self];
                     
                 } else {
                     
                     NSString *error_msg = (NSString *) [jsonData objectForKey:@"error_message"];
-                    [self alertStatus:error_msg :@"Login Failed!"];
+                    [self alertStatus:error_msg :@"Login Fallido!"];
                 }
                 
             } else {
                 if (error) NSLog(@"Error: %@", error);
-                [self alertStatus:@"Connection Failed" :@"Login Failed!"];
+                [self alertStatus:@"Falla de conexión" :@"Login Fallido!"];
             }
         }
     }
     @catch (NSException * e) {
         NSLog(@"Exception: %@", e);
-        [self alertStatus:@"Login Failed." :@"Login Failed!"];
+        [self alertStatus:@"Login Fallido" :@"Login Fallido!"];
     }
 }
 
