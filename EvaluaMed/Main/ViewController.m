@@ -30,6 +30,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBar.topItem.title = @"";
     self.labelUser.text = @"";
     self.labelPassword.text = @"";
 }

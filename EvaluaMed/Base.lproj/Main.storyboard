@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Evaluate List View Controller-->
+        <!--Lista de Alumnos-->
         <scene sceneID="nYu-XK-X1m">
             <objects>
                 <tableViewController id="mh3-xy-VJf" customClass="EvaluateListViewController" sceneMemberID="viewController">
@@ -60,7 +60,9 @@
                             <outlet property="delegate" destination="mh3-xy-VJf" id="ESV-Nr-96U"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="3eY-hv-UZU"/>
+                    <navigationItem key="navigationItem" title="Lista de Alumnos" id="3eY-hv-UZU">
+                        <barButtonItem key="backBarButtonItem" title="Lista" id="H9I-fl-3tN"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="SearchBar" destination="PYu-Tt-iS2" id="s8Q-NW-iZy"/>
                         <outlet property="searchDisplayController" destination="AiJ-Oz-ZUr" id="6TC-u7-sZt"/>
@@ -132,7 +134,7 @@
             </objects>
             <point key="canvasLocation" x="637.5" y="266.5"/>
         </scene>
-        <!--Evaluate Table View Controller-->
+        <!--Evaluación-->
         <scene sceneID="aWV-6p-TTX">
             <objects>
                 <tableViewController id="YcV-KF-LtA" customClass="EvaluateTableViewController" sceneMemberID="viewController">
@@ -239,7 +241,8 @@
                             <outlet property="delegate" destination="YcV-KF-LtA" id="Sqb-hG-RSA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="PgA-v1-ttw">
+                    <navigationItem key="navigationItem" title="Evaluación" id="PgA-v1-ttw">
+                        <barButtonItem key="backBarButtonItem" title="Evaluación" id="Nbr-1U-FQQ"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="ltN-jq-rDm">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Fv-jq-U1r">
                                 <rect key="frame" x="-23" y="-15" width="83" height="30"/>

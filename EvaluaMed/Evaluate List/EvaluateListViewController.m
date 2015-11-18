@@ -93,8 +93,10 @@
 
     NSInteger level = [[miDicc objectForKey:@"nivel"] integerValue];
     
+    NSString *levelText = @"R";
+    
     cell.labelStudentName.text = [NSString stringWithFormat:@"%@ %@ %@",[miDicc objectForKey:@"nombre"],[miDicc objectForKey:@"apellido_p"],[miDicc objectForKey:@"apellido_m"]];
-    cell.labelStudentClass.text = [miDicc objectForKey:@"nivel"];
+    cell.labelStudentClass.text = [levelText stringByAppendingString:[miDicc objectForKey:@"nivel"]];
     cell.labelStudentSpecialty.text = [miDicc objectForKey:@"especialidad"];
     if (level == 1) {
         [cell setBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:1]];
