@@ -50,6 +50,10 @@
     [self loadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    self.SearchBar.text = @"";
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -91,20 +95,18 @@
     
     NSDictionary *miDicc = students[indexPath.row];
 
-    NSInteger level = [[miDicc objectForKey:@"nivel"] integerValue];
-    
-    NSString *levelText = @"R";
+    NSString *level = [miDicc objectForKey:@"nivel"];
     
     cell.labelStudentName.text = [NSString stringWithFormat:@"%@ %@ %@",[miDicc objectForKey:@"nombre"],[miDicc objectForKey:@"apellido_p"],[miDicc objectForKey:@"apellido_m"]];
-    cell.labelStudentClass.text = [levelText stringByAppendingString:[miDicc objectForKey:@"nivel"]];
+    cell.labelStudentClass.text = [miDicc objectForKey:@"nivel"];
     cell.labelStudentSpecialty.text = [miDicc objectForKey:@"especialidad"];
-    if (level == 1) {
+    if ([level isEqualToString:@"R1"]) {
         [cell setBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:1]];
     }
-    else if (level == 2){
+    else if ([level isEqualToString:@"R2"]){
         [cell setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:0 alpha:1]];
     }
-    else if (level == 3){
+    else if ([level isEqualToString:@"R3"]){
         [cell setBackgroundColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:1]];
     }
     
