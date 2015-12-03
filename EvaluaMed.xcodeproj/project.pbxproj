@@ -25,6 +25,8 @@
 		155539481BF86462004EC137 /* 9b.png in Resources */ = {isa = PBXBuildFile; fileRef = 155539381BF86462004EC137 /* 9b.png */; };
 		155988EA1BF1177100735DED /* EvaluateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 155988E91BF1177100735DED /* EvaluateTableViewController.m */; };
 		155988ED1BF1198C00735DED /* EVACell.m in Sources */ = {isa = PBXBuildFile; fileRef = 155988EC1BF1198C00735DED /* EVACell.m */; };
+		1572193B1C1004E3002808AB /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 157219391C1004E3002808AB /* Icon-60@2x.png */; };
+		1572193C1C1004E3002808AB /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1572193A1C1004E3002808AB /* Icon-60@3x.png */; };
 		1573DAFC1BF9A13600A11357 /* pSave.png in Resources */ = {isa = PBXBuildFile; fileRef = 1573DAFB1BF9A13600A11357 /* pSave.png */; };
 		15BF6CB31BF8FF8F002A73F4 /* FinalDestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BF6CB21BF8FF8F002A73F4 /* FinalDestinationViewController.m */; };
 		15C999A71BCCB607006B35B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C999A61BCCB607006B35B6 /* main.m */; };
@@ -88,6 +90,8 @@
 		155988E91BF1177100735DED /* EvaluateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EvaluateTableViewController.m; path = Evaluate/EvaluateTableViewController.m; sourceTree = "<group>"; };
 		155988EB1BF1198C00735DED /* EVACell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EVACell.h; path = Evaluate/EVACell/EVACell.h; sourceTree = "<group>"; };
 		155988EC1BF1198C00735DED /* EVACell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EVACell.m; path = Evaluate/EVACell/EVACell.m; sourceTree = "<group>"; };
+		157219391C1004E3002808AB /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		1572193A1C1004E3002808AB /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
 		1573DAFB1BF9A13600A11357 /* pSave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pSave.png; sourceTree = "<group>"; };
 		15BF6CB11BF8FF8F002A73F4 /* FinalDestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FinalDestinationViewController.h; path = "Final destination/FinalDestinationViewController.h"; sourceTree = "<group>"; };
 		15BF6CB21BF8FF8F002A73F4 /* FinalDestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinalDestinationViewController.m; path = "Final destination/FinalDestinationViewController.m"; sourceTree = "<group>"; };
@@ -287,8 +291,10 @@
 		15C999D31BCCB683006B35B6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				15DB73A11BFE497600D4FA72 /* pSend.png */,
+				157219391C1004E3002808AB /* Icon-60@2x.png */,
+				1572193A1C1004E3002808AB /* Icon-60@3x.png */,
 				155539271BF86462004EC137 /* Evaluate */,
+				15DB73A11BFE497600D4FA72 /* pSend.png */,
 				15FB032D1BCDA5BB00A892E9 /* pEvaluate.png */,
 				15C999D61BCCB683006B35B6 /* pLogin.png */,
 				1573DAFB1BF9A13600A11357 /* pSave.png */,
@@ -469,6 +475,8 @@
 				1555393F1BF86462004EC137 /* 8.png in Resources */,
 				1555393B1BF86462004EC137 /* 5.png in Resources */,
 				15C999B01BCCB607006B35B6 /* Main.storyboard in Resources */,
+				1572193B1C1004E3002808AB /* Icon-60@2x.png in Resources */,
+				1572193C1C1004E3002808AB /* Icon-60@3x.png in Resources */,
 				1573DAFC1BF9A13600A11357 /* pSave.png in Resources */,
 				15C999E71BCCB683006B35B6 /* pTec.png in Resources */,
 				1555393E1BF86462004EC137 /* 7.png in Resources */,

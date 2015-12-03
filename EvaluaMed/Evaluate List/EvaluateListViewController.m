@@ -98,16 +98,23 @@
     NSString *level = [miDicc objectForKey:@"nivel"];
     
     cell.labelStudentName.text = [NSString stringWithFormat:@"%@ %@ %@",[miDicc objectForKey:@"nombre"],[miDicc objectForKey:@"apellido_p"],[miDicc objectForKey:@"apellido_m"]];
-    cell.labelStudentClass.text = [miDicc objectForKey:@"nivel"];
+    cell.labelStudentClass.text = [NSString stringWithFormat:@"%@%@",@"R",[miDicc objectForKey:@"nivel"]];
     cell.labelStudentSpecialty.text = [miDicc objectForKey:@"especialidad"];
-    if ([level isEqualToString:@"R1"]) {
+    
+    if ([level isEqualToString:@"1"]) {
         [cell setBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:1]];
     }
-    else if ([level isEqualToString:@"R2"]){
+    else if ([level isEqualToString:@"2"]){
+        [cell setBackgroundColor:[UIColor colorWithRed:1 green:0.5 blue:0 alpha:1]];
+    }
+    else if ([level isEqualToString:@"3"]){
         [cell setBackgroundColor:[UIColor colorWithRed:1 green:1 blue:0 alpha:1]];
     }
-    else if ([level isEqualToString:@"R3"]){
+    else if ([level isEqualToString:@"4"]){
         [cell setBackgroundColor:[UIColor colorWithRed:0 green:1 blue:0 alpha:1]];
+    }
+    else if ([level isEqualToString:@"5"]){
+        [cell setBackgroundColor:[UIColor colorWithRed:0 green:.5 blue:0 alpha:1]];
     }
     
     return cell;
