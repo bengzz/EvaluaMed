@@ -52,6 +52,8 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     self.SearchBar.text = @"";
+    students = auxstudents;
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
